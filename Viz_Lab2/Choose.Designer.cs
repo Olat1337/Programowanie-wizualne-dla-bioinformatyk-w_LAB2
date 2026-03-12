@@ -28,64 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ListViewItem listViewItem1 = new ListViewItem("Chleb");
-            ListViewItem listViewItem2 = new ListViewItem("Mleko");
-            ListViewItem listViewItem3 = new ListViewItem("Jabłka");
-            ListViewItem listViewItem4 = new ListViewItem("Mięso");
-            ListViewItem listViewItem5 = new ListViewItem("Jajka (x10)");
-            ListViewItem listViewItem6 = new ListViewItem("Chipsy");
-            listView1 = new ListView();
-            button1 = new Button();
-            button2 = new Button();
-            SuspendLayout();
+            this.btnDodaj = new System.Windows.Forms.Button();
+            this.btnAnuluj = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
             // 
-            // listView1
+            // btnDodaj
             // 
-            listViewItem1.Tag = "10";
-            listView1.Items.AddRange(new ListViewItem[] { listViewItem1, listViewItem2, listViewItem3, listViewItem4, listViewItem5, listViewItem6 });
-            listView1.Location = new Point(12, 12);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(224, 138);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
+            this.btnDodaj.Location = new System.Drawing.Point(12, 156);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(118, 58);
+            this.btnDodaj.TabIndex = 1;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // btnAnuluj
             // 
-            button1.Location = new Point(12, 156);
-            button1.Name = "button1";
-            button1.Size = new Size(118, 58);
-            button1.TabIndex = 1;
-            button1.Text = "Dodaj";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.btnAnuluj.Location = new System.Drawing.Point(130, 156);
+            this.btnAnuluj.Name = "btnAnuluj";
+            this.btnAnuluj.Size = new System.Drawing.Size(118, 58);
+            this.btnAnuluj.TabIndex = 2;
+            this.btnAnuluj.Text = "Anuluj";
+            this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button2
+            // listBox1
             // 
-            button2.Location = new Point(118, 156);
-            button2.Name = "button2";
-            button2.Size = new Size(118, 58);
-            button2.TabIndex = 2;
-            button2.Text = "Anuluj";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(236, 144);
+            this.listBox1.TabIndex = 3;
             // 
             // Choose
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(248, 320);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(listView1);
-            Name = "Choose";
-            Text = "Form2";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(260, 230);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnAnuluj);
+            this.Controls.Add(this.btnDodaj);
+            this.Name = "Choose";
+            this.Text = "Wybierz jedzenie";
+            this.ResumeLayout(false);
         }
 
         #endregion
 
-        private ListView listView1;
-        private Button button1;
-        private Button button2;
+        private System.Windows.Forms.Button btnDodaj;
+        private System.Windows.Forms.Button btnAnuluj;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

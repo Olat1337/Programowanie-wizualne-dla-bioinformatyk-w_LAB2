@@ -2,15 +2,8 @@
 {
     partial class Transport
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,78 +15,87 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            SuspendLayout();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // checkBox1
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(12, 16);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(73, 24);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "Rower";
-            checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(12, 16);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(73, 24);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Rower";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(12, 46);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(72, 24);
-            checkBox2.TabIndex = 1;
-            checkBox2.Text = "Skuter";
-            checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(12, 46);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(72, 24);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Skuter";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(12, 76);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(102, 24);
-            checkBox3.TabIndex = 2;
-            checkBox3.Text = "Samochód";
-            checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(12, 76);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(102, 24);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Samochód";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(12, 106);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(72, 24);
-            checkBox4.TabIndex = 3;
-            checkBox4.Text = "Robot";
-            checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(12, 106);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(72, 24);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Robot";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(178, 101);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(94, 29);
+            this.btnOK.TabIndex = 4;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // Transport
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(284, 147);
-            Controls.Add(checkBox4);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
-            Name = "Transport";
-            Text = "Transport";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 147);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Name = "Transport";
+            this.Text = "Opcje Dostawy";
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
 
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Button btnOK;
     }
 }

@@ -2,15 +2,8 @@
 {
     partial class Zamów_jedzenie
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,88 +15,100 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             listView1 = new ListView();
-            label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            lblSuma = new Label();
+            btnOpenChoose = new Button();
+            btnOpenTransport = new Button();
+            btnOpenPay = new Button();
+            lblTransportStatus = new Label();
             SuspendLayout();
             // 
             // listView1
             // 
+            listView1.FullRowSelect = true;
+            listView1.GridLines = true;
             listView1.Location = new Point(12, 12);
             listView1.Name = "listView1";
-            listView1.Size = new Size(208, 259);
+            listView1.Size = new Size(227, 259);
             listView1.TabIndex = 0;
-            listView1.TileSize = new Size(10, 10);
             listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
             // 
-            // label1
+            // lblSuma
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(315, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(42, 20);
-            label1.TabIndex = 1;
-            label1.Text = "Cena";
+            lblSuma.AutoSize = true;
+            lblSuma.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblSuma.Location = new Point(260, 10);
+            lblSuma.Name = "lblSuma";
+            lblSuma.Size = new Size(93, 23);
+            lblSuma.TabIndex = 1;
+            lblSuma.Text = "Suma: 0 zł";
             // 
-            // button1
+            // btnOpenChoose
             // 
-            button1.Location = new Point(273, 85);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 41);
-            button1.TabIndex = 2;
-            button1.Text = "Wybierz";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnOpenChoose.Location = new Point(260, 85);
+            btnOpenChoose.Name = "btnOpenChoose";
+            btnOpenChoose.Size = new Size(150, 41);
+            btnOpenChoose.TabIndex = 2;
+            btnOpenChoose.Text = "Wybierz produkt";
+            btnOpenChoose.UseVisualStyleBackColor = true;
+            btnOpenChoose.Click += button1_Click;
             // 
-            // button2
+            // btnOpenTransport
             // 
-            button2.Location = new Point(273, 146);
-            button2.Name = "button2";
-            button2.Size = new Size(128, 41);
-            button2.TabIndex = 3;
-            button2.Text = "Transport";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnOpenTransport.Location = new Point(260, 146);
+            btnOpenTransport.Name = "btnOpenTransport";
+            btnOpenTransport.Size = new Size(150, 41);
+            btnOpenTransport.TabIndex = 3;
+            btnOpenTransport.Text = "Transport";
+            btnOpenTransport.UseVisualStyleBackColor = true;
+            btnOpenTransport.Click += button2_Click;
             // 
-            // button3
+            // btnOpenPay
             // 
-            button3.Location = new Point(273, 213);
-            button3.Name = "button3";
-            button3.Size = new Size(128, 41);
-            button3.TabIndex = 4;
-            button3.Text = "Zapłać";
-            button3.UseVisualStyleBackColor = true;
+            btnOpenPay.Location = new Point(260, 213);
+            btnOpenPay.Name = "btnOpenPay";
+            btnOpenPay.Size = new Size(150, 41);
+            btnOpenPay.TabIndex = 4;
+            btnOpenPay.Text = "Zapłać";
+            btnOpenPay.UseVisualStyleBackColor = true;
+            btnOpenPay.Click += btnOpenPay_Click;
+            // 
+            // lblTransportStatus
+            // 
+            lblTransportStatus.AutoSize = true;
+            lblTransportStatus.Location = new Point(260, 31);
+            lblTransportStatus.Name = "lblTransportStatus";
+            lblTransportStatus.Size = new Size(96, 20);
+            lblTransportStatus.TabIndex = 5;
+            lblTransportStatus.Text = "Transport: ---";
             // 
             // Zamów_jedzenie
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(440, 285);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label1);
+            ClientSize = new Size(444, 285);
+            Controls.Add(lblTransportStatus);
+            Controls.Add(btnOpenPay);
+            Controls.Add(btnOpenTransport);
+            Controls.Add(btnOpenChoose);
+            Controls.Add(lblSuma);
             Controls.Add(listView1);
             Name = "Zamów_jedzenie";
-            Text = "Zamów_jedzenie";
+            Text = "Koszyk zamówień";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ListView listView1;
-        private Label label1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label lblSuma;
+        private System.Windows.Forms.Button btnOpenChoose;
+        private System.Windows.Forms.Button btnOpenTransport;
+        private System.Windows.Forms.Button btnOpenPay;
+        private System.Windows.Forms.Label lblTransportStatus;
     }
 }
